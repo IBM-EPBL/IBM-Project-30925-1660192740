@@ -1,0 +1,129 @@
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+	width: 1170px;
+	margin: auto;
+}
+header {
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(bg.jpg);
+	height: 100vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+.nav-area {
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+}
+.nav-area li {
+	display: inline-block;
+}
+.nav-area li a {
+	color: white;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: poppins;
+	font-size: 16px;
+	text-transform: uppercase;
+    border-radius: 5px;
+}
+.nav-area li a:hover {
+	background:rgb(167, 162, 162);
+	cursor: pointer;
+	transition: 1s ease;
+}
+.logo {
+	float: left;
+}
+.logo img {
+	width: 20%;
+	padding: 5px ;
+    border-radius: 15px;
+}
+.welcome-text {
+	position: absolute;
+	width: 600px;
+	height: 300px;
+	margin: 20% 30%;
+	text-align: center;
+}
+.welcome-text h1 {
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 40px;
+}
+.welcome-text h1 span {
+	color: #00fecb;
+}
+.quote {
+	position: absolute;
+	width: 600px;
+	height: 200px;
+	margin: 30% 30%;
+	text-align: center;
+}
+.quote h1 {
+	text-align: center;
+	color:white;
+	text-transform: uppercase;
+	font-size: 20px;
+    animation: text 3s 1;
+}
+@keyframes text{
+	0%{
+		color: white;
+		margin-bottom: -30px;
+	}
+	30%{
+		letter-spacing: 25px;
+		margin-bottom: -30px;
+	}
+	85%{
+		letter-spacing: 8px;
+		margin-bottom: -30px;
+	}
+
+}
+
+
+
+@media (max-width:600px) {
+	.wrapper {
+		width: 100%;
+	}
+	.logo {
+		float: none;
+		width: 50%;
+		text-align: center;
+		margin: auto;
+	}
+	.nav-area {
+		float: none;
+		margin-top: 0;
+	}
+	.nav-area li a {
+		padding: 5px;
+		font-size: 11px;
+	}
+	.nav-area {
+		text-align: center;
+	}
+	.welcome-text {
+		width: 100%;
+		height: auto;
+		margin: 30% 0;
+	}
+	.welcome-text h1 {
+		font-size: 30px;
+	}
+}
