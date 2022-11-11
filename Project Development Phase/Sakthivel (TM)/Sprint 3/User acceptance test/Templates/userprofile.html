@@ -1,0 +1,21 @@
+{% extends '_userdashboard.html' %}
+{% block body %}
+<div class="box">
+    <div class="profile">
+        <label>fullname:</label>
+        <span><p>{{fullname}}</p></span>
+    </div>
+    <div class="profile">
+        <label>Username :</label>
+        <span><p>{{ username }}</p></span> 
+    </div>
+    <div class="profile">
+        <label>Email :</label>
+        <span><p>{{ email }}</p></span>
+    </div>
+    <div class="profile">
+        <label>Address:</label>
+        <span><p>{{ address }}</p></span>
+    </div>
+</div>
+{% endblock %}
