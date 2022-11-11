@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Agent login</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+	<link href="../static/agent.css" rel="stylesheet">
+</head>
+<body>
+	<div class="form">
+		<h2> Agent login</h2>
+		<form action="/agentdata" method="POST">
+			<p>Username</p><input placeholder="Enter your name" type="text" name='username'>
+			<p>Password</p><input placeholder="Enter password" type="password" name='password'> 
+			<input type="submit" value="Sign in">
+		</form>
+        <div class="links">
+           <p>click here for dashboard <a href="/adminpage"> Click here</a></p>
+       </div>
+		{{a}}
+	</div>
+</body>
+</html> 
