@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>user login</title>
+	<link rel="shortcut icon" type="image/jpg" href="../static/img3.jpg">
+	<link href="../static/login.css" rel="stylesheet">
+</head>
+<body>
+		<img src= "{{url_for('static',filename='img5.jpg')}}" alt="" class="hello" width="100%" height="100%" style="filter: blur(2px);">
+
+	<div class="contact-form">
+		<img  src="{{url_for('static',filename='a1.jpg')}}" alt="" class="avatar">
+		<h2> User login</h2>
+		<form action="/logindata" method="POST">
+			<p>Username</p><input placeholder="Enter username" type="text" name="username">
+			<p>Password</p><input placeholder="Enter Password" type="password" name="password">
+    		<span class="alert {{indicator}}">{{b}}</span>
+			 <input type="submit" value="Sign in">
+		</form>
+        <div class="links">
+           <p>Not yet registered..?? <a href="/registertemp"> Click here</a></p>
+        </div>
+	</div>
+</body>
+</html>

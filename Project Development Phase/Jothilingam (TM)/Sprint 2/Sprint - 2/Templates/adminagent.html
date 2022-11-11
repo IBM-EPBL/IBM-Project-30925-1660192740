@@ -1,0 +1,12 @@
+{% extends '_admindashboard.html' %}
+{% block body %}
+<div class="form">
+    <h2> Agent login</h2>
+    <form action="/agentdata" method="POST">
+        <p>Username</p><input placeholder="Enter your name" type="text" name="username" required>
+        <p>Password</p><input placeholder="Enter password" type="password" name="password" required>
+         <input type="submit" value="create">
+         {{a}}
+    </form>
+</div>
+{% endblock %}
